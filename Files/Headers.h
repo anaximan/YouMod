@@ -144,6 +144,7 @@
 #define HideShortsTab @"YouModHideShortsTab"
 #define HideCreateButton @"YouModHideCreateButton"
 #define HideSubscriptTab @"YouModHideSubscriptionsTab"
+#define HideHistoryTab @"YouModHideHistoryTab"
 // Miscellaneous
 #define BackgroundPlayback @"YouModEnablesBackgroundPlayback"
 #define DisablesShortsPiP @"YouModTrytoDisablesShortsPiP"
