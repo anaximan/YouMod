@@ -21,6 +21,9 @@
         if ([pID isEqualToString:@"FEsubscriptions"] && IS_ENABLED(HideSubscriptTab)) {
             [indicesToRemove addIndex:i];
         }
+        if ([pID isEqualToString:@"FEhistory"] && IS_ENABLED(HideHistoryTab)) {
+            [indicesToRemove addIndex:i];
+        }
     }
     // Remove them all at once so the layout doesn't break
     [items removeObjectsAtIndexes:indicesToRemove];
@@ -51,7 +54,7 @@ BOOL isTabSelected = NO;
 - (void)viewDidAppear:(BOOL)animated {
     %orig;
     if (!isTabSelected) {
-        NSArray *pivotIdentifiers = @[@"FEwhat_to_watch", @"FEshorts", @"FEsubscriptions", @"FElibrary"];
+        NSArray *pivotIdentifiers = @[@"FEwhat_to_watch", @"FEshorts", @"FEsubscriptions", @"FElibrary", @"FEhistory"];
         [self selectItemWithPivotIdentifier:pivotIdentifiers[INTFORVAL(DefaultTab)]]; // Set int here
         isTabSelected = YES;
     }
