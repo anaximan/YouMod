@@ -229,6 +229,8 @@
 "HIDE_CREATE_BUTTON_DESC" = "Hide Create button in the tab bar.";
 "HIDE_SUBSCRIPT_TAB" = "Hide Subscriptions tab";
 "HIDE_SUBSCRIPT_TAB_DESC" = "Hide Subscriptions tab in the tab bar.";
+"HIDE_HISTORY_TAB" = "Hide History tab";
+"HIDE_HISTORY_TAB_DESC" = "Hide History tab in the tab bar.";
 
 "MISCELLANEOUS" = "Miscellaneous";
 "BACKGROUND_PLAYBACK" = "Background playback";
